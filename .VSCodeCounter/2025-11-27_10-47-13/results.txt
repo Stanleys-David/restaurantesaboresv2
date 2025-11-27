@@ -1,0 +1,51 @@
+Date : 2025-11-27 10:47:13
+Directory : c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main
+Total : 21 files,  5342 codes, 129 comments, 723 blanks, all 6194 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |          7 |      2,790 |        110 |        282 |      3,182 |
+| PostCSS    |          7 |      2,015 |         18 |        374 |      2,407 |
+| HTML       |          7 |        537 |          1 |         67 |        605 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                     | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                        |         21 |      5,342 |        129 |        723 |      6,194 |
+| . (Files)                                                                                                |          1 |         20 |          0 |          0 |         20 |
+| css                                                                                                      |          7 |      2,015 |         18 |        374 |      2,407 |
+| html                                                                                                     |          6 |        517 |          1 |         67 |        585 |
+| js                                                                                                       |          7 |      2,790 |        110 |        282 |      3,182 |
++----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                 | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\css\admin.css          | PostCSS    |        514 |          2 |         98 |        614 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\css\cart.css           | PostCSS    |        335 |          1 |         63 |        399 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\css\inicioSesion.css   | PostCSS    |        181 |          1 |         34 |        216 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\css\menu.css           | PostCSS    |        464 |         13 |         88 |        565 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\css\orders.css         | PostCSS    |        318 |          1 |         60 |        379 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\css\register.css       | PostCSS    |        174 |          0 |         31 |        205 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\css\styles.css         | PostCSS    |         29 |          0 |          0 |         29 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\html\admin.html        | HTML       |        148 |          1 |         16 |        165 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\html\cart.html         | HTML       |        100 |          0 |         12 |        112 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\html\inicioSesion.html | HTML       |         54 |          0 |          8 |         62 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\html\menu.html         | HTML       |        100 |          0 |         13 |        113 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\html\orders.html       | HTML       |         53 |          0 |          7 |         60 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\html\register.html     | HTML       |         62 |          0 |         11 |         73 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\index.html             | HTML       |         20 |          0 |          0 |         20 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\js\admin.js            | JavaScript |      1,190 |         38 |        109 |      1,337 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\js\cart.js             | JavaScript |        202 |          0 |          7 |        209 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\js\firebase.js         | JavaScript |        368 |         23 |         37 |        428 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\js\inicioSesion.js     | JavaScript |         94 |          8 |         21 |        123 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\js\menu.js             | JavaScript |        494 |         29 |         69 |        592 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\js\orders.js           | JavaScript |        374 |         10 |         23 |        407 |
+| c:\Users\marlo\OneDrive\Desktop\Restaurante_Sabores-main\Restaurante_Sabores-main\js\register.js         | JavaScript |         68 |          2 |         16 |         86 |
+| Total                                                                                                    |            |      5,342 |        129 |        723 |      6,194 |
++----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
