@@ -89,10 +89,7 @@ function updateNotificationBadge() {
 }
 
 function showNotificationPanel() {
-<<<<<<< HEAD
   // Crear modal de notificaciones
-=======
->>>>>>> 920a0574071e0fade40c57bd5e267496bcc52b37
   const modal = document.createElement("div")
   modal.className = "modal"
   modal.id = "notificationsModal"
