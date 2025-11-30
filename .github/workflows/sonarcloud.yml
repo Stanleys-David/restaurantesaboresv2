@@ -1,3 +1,6 @@
+1  # This workflow uses actions that are not certified by GitHub.
+2  # They are provided by a third-party and are governed by
+3  # separate terms of service, privacy policy, and support    
         with:
           # Argumentos adicionales para el SonarScanner CLI
           args:
