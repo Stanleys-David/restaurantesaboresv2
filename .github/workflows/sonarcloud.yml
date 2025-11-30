@@ -1,4 +1,4 @@
-# Este archivo contiene las claves de SonarCloud y tiene la sintaxis YAML corregida.
+# Workflow de SonarCloud corregido
 
 name: SonarCloud analysis
 
@@ -10,7 +10,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  pull-requests: read # permite a SonarCloud decorar PRs con resultados
+  contents: read
+  pull-requests: write # necesario para que SonarCloud pueda decorar PRs
 
 jobs:
   Analysis:
@@ -22,19 +23,14 @@ jobs:
           fetch-depth: 0 # Clonación profunda necesaria para SonarCloud
 
       - name: Analyze with SonarCloud
-        # Se usa el commit específico que tenías
+        # Puedes usar una versión etiquetada de la acción (ej. @v1) o el commit que se muestra
         uses: SonarSource/sonarcloud-github-action@4006f663ecaf1f8093e8e4abb9227f6041f52216
-        
         env:
-          # Se usará el Secreto de GitHub que ya creaste llamado SONAR_TOKEN
+          # El secreto SONAR_TOKEN debe existir en Settings > Secrets del repo
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          
-               with:
-          args:
-            # CORREGIDO: ahora tiene la indentación adecuada
-            -Dsonar.projectKey=Stanleys-David_restaurantesaboresv2 
-            
-            # CORREGIDO: ahora tiene la indentación adecuada
+        with:
+          args: >
+            -Dsonar.projectKey=Stanleys-David_restaurantesaboresv2
             -Dsonar.organization=stanleysdavid
-
+            -Dsonar.login=$SONAR_TOKEN
           projectBaseDir: .
