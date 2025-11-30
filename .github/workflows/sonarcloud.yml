@@ -1,42 +1,15 @@
-# Archivo: .github/workflows/sonarcloud_analysis.yml
-
-name: SonarCloud analysis
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-  workflow_dispatch:
-
-permissions:
-  pull-requests: read # allows SonarCloud to decorate PRs with analysis results
-
-jobs:
-  Analysis:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # Shallow clones are not supported for SonarCloud
-
-      - name: Analyze with SonarCloud
-        # Usaremos el commit que tenías en tu workflow original
-        uses: SonarSource/sonarcloud-github-action@4006f663ecaf1f8093e8e4abb9227f6041f52216
-        
-        env:
-          # El token se toma de los Secretos de GitHub. ¡Asegúrate de crearlo!
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          
         with:
           # Argumentos adicionales para el SonarScanner CLI
           args:
-            # 1. CLAVE DEL PROYECTO: (De imagen 2)
+            # 1. CLAVE DEL PROYECTO: (Tu clave exacta de SonarCloud)
             -Dsonar.projectKey=Stanleys-David_restaurantesaboresv2 
             
-            # 2. CLAVE DE LA ORGANIZACIÓN: (De imagen 4)
+            # 2. CLAVE DE LA ORGANIZACIÓN: (Tu clave exacta de SonarCloud)
             -Dsonar.organization=stanleysdavid
 
-          projectBaseDir: .
+          # Si comentaste alguna línea opcional como esta, revísala bien:
+          #-Dsonar.sources=
+
+          # Esta es la línea que debe estar alrededor de la línea 33, si la tenías:
+          projectBaseDir: . 
           
