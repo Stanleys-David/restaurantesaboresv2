@@ -1,18 +1,40 @@
-1  # This workflow uses actions that are not certified by GitHub.
-2  # They are provided by a third-party and are governed by
-3  # separate terms of service, privacy policy, and support    
+# Este archivo contiene las claves de SonarCloud y tiene la sintaxis YAML corregida.
+
+name: SonarCloud analysis
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  pull-requests: read # permite a SonarCloud decorar PRs con resultados
+
+jobs:
+  Analysis:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
         with:
-          # Argumentos adicionales para el SonarScanner CLI
+          fetch-depth: 0 # Clonación profunda necesaria para SonarCloud
+
+      - name: Analyze with SonarCloud
+        # Se usa el commit específico que tenías
+        uses: SonarSource/sonarcloud-github-action@4006f663ecaf1f8093e8e4abb9227f6041f52216
+        
+        env:
+          # Se usará el Secreto de GitHub que ya creaste llamado SONAR_TOKEN
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          
+               with:
           args:
-            # 1. CLAVE DEL PROYECTO: (Tu clave exacta de SonarCloud)
+            # CORREGIDO: ahora tiene la indentación adecuada
             -Dsonar.projectKey=Stanleys-David_restaurantesaboresv2 
             
-            # 2. CLAVE DE LA ORGANIZACIÓN: (Tu clave exacta de SonarCloud)
+            # CORREGIDO: ahora tiene la indentación adecuada
             -Dsonar.organization=stanleysdavid
 
-          # Si comentaste alguna línea opcional como esta, revísala bien:
-          #-Dsonar.sources=
-
-          # Esta es la línea que debe estar alrededor de la línea 33, si la tenías:
-          projectBaseDir: . 
-          
+          projectBaseDir: .
